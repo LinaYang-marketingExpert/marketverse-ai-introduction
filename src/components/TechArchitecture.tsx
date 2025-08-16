@@ -7,31 +7,31 @@ const techFeatures = [
     icon: Cloud,
     title: "Cloud-Based Infrastructure",
     description: "Secure, scalable, and high-performance cloud hosting ensuring 99.9% uptime and global accessibility.",
-    technologies: ["AWS", "Auto-scaling", "Load Balancing"]
+    // technologies: ["AWS", "Auto-scaling", "Load Balancing"]
   },
   {
     icon: Brain,
     title: "Advanced NLP & ML",
     description: "State-of-the-art natural language processing and machine learning algorithms for deep market insights.",
-    technologies: ["GPT-4", "BERT", "TensorFlow"]
+    // technologies: ["GPT-4", "BERT", "TensorFlow"]
   },
   {
     icon: Shield,
     title: "Enterprise Security",
     description: "Bank-level encryption, access controls, and regular security audits to protect your valuable data.",
-    technologies: ["AES-256", "OAuth 2.0", "SOC 2"]
+    // technologies: ["AES-256", "OAuth 2.0", "SOC 2"]
   },
   {
     icon: Link,
     title: "Seamless Integrations",
     description: "Connect with popular marketing platforms for streamlined workflows and automated data synchronization.",
-    technologies: ["Google Ads", "Facebook Ads", "Mailchimp"]
+    // technologies: ["Google Ads", "Facebook Ads", "Mailchimp"]
   }
 ];
 
 const TechArchitecture = () => {
   return (
-    <section className="py-24 bg-muted/30">
+    <section className="py-24 bg-muted/30" id="tech-architecture">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 animate-slide-up">
@@ -72,7 +72,7 @@ const TechArchitecture = () => {
                 </p>
                 
                 <div className="flex flex-wrap gap-2">
-                  {feature.technologies.map((tech, techIndex) => (
+                  {/* {feature.technologies.map((tech, techIndex) => (
                     <Badge
                       key={techIndex}
                       variant="secondary"
@@ -80,7 +80,7 @@ const TechArchitecture = () => {
                     >
                       {tech}
                     </Badge>
-                  ))}
+                  ))} */}
                 </div>
               </div>
             </Card>

@@ -1,5 +1,13 @@
-import { Brain, Mail, Twitter, Linkedin, Github } from "lucide-react";
+import { 
+  FaTelegramPlane, 
+  FaDiscord, 
+  FaTwitter, 
+  FaLinkedin, 
+  FaGithub, 
+  FaEnvelope 
+} from "react-icons/fa";
 import { Button } from "@/components/ui/button";
+import logoImage from "/logo1.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,36 +17,36 @@ const Footer = () => {
       title: "Product",
       links: [
         { name: "Features", href: "#features" },
-        { name: "Technology", href: "#technology" },
-        { name: "Pricing", href: "#pricing" },
-        { name: "API Docs", href: "#api" }
+        { name: "Problems", href: "#problems" },
+        { name: "Solutions", href: "#solutions" },
+        { name: "Technology", href: "#tech-architecture" },
       ]
     },
-    {
-      title: "Company",
-      links: [
-        { name: "About Us", href: "#about" },
-        { name: "Careers", href: "#careers" },
-        { name: "News", href: "#news" },
-        { name: "Contact", href: "#contact" }
-      ]
-    },
+    // {
+    //   title: "Company",
+    //   links: [
+    //     { name: "About Us", href: "#about" },
+    //     { name: "Careers", href: "#careers" },
+    //     { name: "News", href: "#news" },
+    //     { name: "Contact", href: "#contact" }
+    //   ]
+    // },
     {
       title: "Resources",
       links: [
-        { name: "Blog", href: "#blog" },
-        { name: "Help Center", href: "#help" },
-        { name: "Case Studies", href: "#cases" },
-        { name: "Webinars", href: "#webinars" }
+        { name: "Whitepaper", href: "https://docs.google.com/document/d/1zOvMPdQtRnlsBi9aHk19zV91wkJQ1FPHzVelfqjq-gc/edit?usp=sharing" },
+        { name: "Pitch deck", href: "https://pitch.com/v/marketverse-ai-uqckyp" }
       ]
     }
   ];
 
   const socialLinks = [
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Mail, href: "#", label: "Email" }
+    { icon: FaTwitter, href: "#", label: "Twitter" },
+    { icon: FaTelegramPlane, href: "#", label: "Telegram" },
+    { icon: FaDiscord, href: "#", label: "Discord" },
+    // { icon: FaLinkedin, href: "#", label: "LinkedIn" },
+    // { icon: FaGithub, href: "#", label: "GitHub" },
+    // { icon: FaEnvelope, href: "#", label: "Email" }
   ];
 
   return (
@@ -50,18 +58,19 @@ const Footer = () => {
           <div className="lg:col-span-2 space-y-6">
             <div className="flex items-center space-x-2">
               <div className="p-2 bg-gradient-primary rounded-lg shadow-glow">
-                <Brain className="w-6 h-6 text-white" />
+                <img src={logoImage} alt="logo" className="h-10 w-10" />
+                {/* <Brain className="w-6 h-6 text-white" /> */}
               </div>
               <span className="text-xl font-bold">
                 <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">MVAI</span>
               </span>
             </div>
-            
+
             <p className="text-muted-foreground leading-relaxed max-w-md">
               Strategic AI for Marketers. Transform marketing complexities into laser-focused strategies with MVAI's intelligent platform.
             </p>
-            
-            <div className="flex space-x-4">
+
+            <div className="flex space-x-4 text-gray-600">
               {socialLinks.map((social) => (
                 <Button
                   key={social.label}
@@ -70,8 +79,8 @@ const Footer = () => {
                   className="hover:bg-primary/10 hover:text-primary"
                   asChild
                 >
-                  <a href={social.href} aria-label={social.label}>
-                    <social.icon className="w-5 h-5" />
+                  <a href={social.href} aria-label={social.label}> 
+                    <social.icon />
                   </a>
                 </Button>
               ))}
@@ -99,7 +108,7 @@ const Footer = () => {
         </div>
 
         {/* Newsletter */}
-        <div className="border-t border-border/50 pt-8 mb-8">
+        {/* <div className="border-t border-border/50 pt-8 mb-8">
           <div className="max-w-md">
             <h3 className="font-semibold text-foreground mb-2">Stay Updated</h3>
             <p className="text-muted-foreground text-sm mb-4">
@@ -116,7 +125,7 @@ const Footer = () => {
               </Button>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Bottom Bar */}
         <div className="border-t border-border/50 pt-8">
@@ -124,8 +133,8 @@ const Footer = () => {
             <div className="text-sm text-muted-foreground">
               © {currentYear} MVAI. All rights reserved.
             </div>
-            
-            <div className="flex space-x-6 text-sm">
+
+            {/* <div className="flex space-x-6 text-sm">
               <a href="#privacy" className="text-muted-foreground hover:text-foreground transition-colors">
                 Privacy Policy
               </a>
@@ -135,7 +144,7 @@ const Footer = () => {
               <a href="#cookies" className="text-muted-foreground hover:text-foreground transition-colors">
                 Cookie Policy
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

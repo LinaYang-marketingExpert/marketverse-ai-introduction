@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Database, Brain, Calendar, Settings } from "lucide-react";
-import marketAnalysisImage from "@/assets/market-analysis.jpg";
+import marketAnalysisImage from "@/assets/market-analysis.png";
 import strategyForgeImage from "@/assets/strategy-forge.jpg";
 import actionPlannerImage from "@/assets/action-planner.jpg";
 
@@ -11,7 +11,7 @@ const features = [
     icon: Database,
     title: "AI-Powered Market Analysis",
     subtitle: "Data Miner Module",
-    description: "Automatically gathers and analyzes market intelligence from social media, news articles, competitor websites, and industry reports using sophisticated NLP algorithms.",
+    description: "Automatically gathers and analyzes market intelligence from social media, news articles, competitor websites, and industry reports",
     benefits: [
       "Save time and resources by automating market research",
       "Extract key themes, trends, and customer sentiments",
@@ -25,7 +25,7 @@ const features = [
     icon: Brain,
     title: "Intelligent Strategy Generation",
     subtitle: "Strategy Forge Module",
-    description: "Leverages machine learning to generate customized marketing strategies based on your product, target audience, and business goals by analyzing millions of data points.",
+    description: "MVAI generate customized marketing strategies based on your product, target audience, and business goals by analyzing millions of data points.",
     benefits: [
       "Access to expert-level marketing strategies",
       "Identify most effective tactics and channels",
@@ -52,7 +52,7 @@ const features = [
 
 const Features = () => {
   return (
-    <section className="py-24 bg-background">
+    <section className="py-24 bg-background" id="features">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 animate-slide-up">

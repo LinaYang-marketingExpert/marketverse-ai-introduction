@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Brain } from "lucide-react";
+import logoImage from "/logo1.png";
 
 const Navigation = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const navItems = [
     { name: "Features", href: "#features" },
@@ -19,7 +20,8 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="p-2 bg-gradient-primary rounded-lg shadow-glow">
-              <Brain className="w-6 h-6 text-white" />
+              {/* <Brain className="w-6 h-6 text-white" /> */}
+              <img src={logoImage} alt="logo" className="h-10 w-10" />
             </div>
             <span className="text-xl font-bold">
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">MVAI</span>
@@ -27,7 +29,7 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          {/* <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <a
                 key={item.name}
@@ -37,17 +39,17 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
-          </div>
+          </div> */}
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex items-center space-x-4">
+          {/* <div className="hidden md:flex items-center space-x-4">
             <Button variant="ghost">
               Sign In
             </Button>
             <Button variant="hero">
               Get Started
             </Button>
-          </div>
+          </div> */}
 
           {/* Mobile Menu Button */}
           <Button
@@ -74,14 +76,14 @@ const Navigation = () => {
                   {item.name}
                 </a>
               ))}
-              <div className="pt-4 space-y-2">
+              {/* <div className="pt-4 space-y-2">
                 <Button variant="ghost" className="w-full justify-start">
                   Sign In
                 </Button>
                 <Button variant="hero" className="w-full">
                   Get Started
                 </Button>
-              </div>
+              </div> */}
             </div>
           </div>
         )}

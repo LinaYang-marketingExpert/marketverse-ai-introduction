@@ -43,7 +43,7 @@ const solutions = [
 
 const ProblemSolution = () => {
   return (
-    <section className="py-24 bg-background">
+    <section className="py-24 bg-background" id="problems">
       <div className="container mx-auto px-6">
         {/* The Problem */}
         <div className="mb-24">
@@ -84,7 +84,7 @@ const ProblemSolution = () => {
         </div>
 
         {/* The Solution */}
-        <div>
+        <div id="solutions">
           <div className="text-center max-w-3xl mx-auto mb-16 animate-slide-up">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">
               The Solution: <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">MVAI - Your Strategic AI Partner</span>
@@ -127,9 +127,9 @@ const ProblemSolution = () => {
                     Start Your Free Trial
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
-                  <Button variant="outline" size="lg">
+                  {/* <Button variant="outline" size="lg">
                     Schedule Demo
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
             </Card>
