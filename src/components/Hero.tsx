@@ -2,8 +2,10 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Brain, Zap } from "lucide-react";
 import heroImage from "@/assets/hero-ai-brain.jpg";
 import logoImage from "/logo1.png";
+import SlidePanel from "./slide";
 
 const Hero = () => {
+  
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero" id="hero-section">
       {/* Background Effects */}
@@ -61,11 +63,12 @@ const Hero = () => {
           {/* Right Content - Hero Image */}
           <div className="relative lg:block hidden animate-fade-in">
             <div className="relative">
-              <img
+              {/* <img
                 src={heroImage}
                 alt="AI Brain Network Visualization"
                 className="w-full h-auto rounded-2xl shadow-elegant"
-              />
+              /> */}
+              <SlidePanel />
               <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent rounded-2xl" />
             </div>
 

@@ -41,9 +41,9 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: FaTwitter, href: "#", label: "Twitter" },
-    { icon: FaTelegramPlane, href: "#", label: "Telegram" },
-    { icon: FaDiscord, href: "#", label: "Discord" },
+    { icon: FaTwitter, href: "https://x.com/theMVAI", label: "Twitter" },
+    { icon: FaTelegramPlane, href: "https://t.me/+Rqr_hkvBm4Y3MDkx", label: "Telegram" },
+    { icon: FaDiscord, href: "https://discord.gg/5KPxBkwp", label: "Discord" },
     // { icon: FaLinkedin, href: "#", label: "LinkedIn" },
     // { icon: FaGithub, href: "#", label: "GitHub" },
     // { icon: FaEnvelope, href: "#", label: "Email" }

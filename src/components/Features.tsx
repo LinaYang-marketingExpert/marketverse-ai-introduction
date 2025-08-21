@@ -2,8 +2,8 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Database, Brain, Calendar, Settings } from "lucide-react";
 import marketAnalysisImage from "@/assets/market-analysis.png";
-import strategyForgeImage from "@/assets/strategy-forge.jpg";
-import actionPlannerImage from "@/assets/action-planner.jpg";
+import strategyForgeImage from "@/assets/strategy-forge.png";
+import actionPlannerImage from "@/assets/action-planner.png";
 
 const features = [
   {
